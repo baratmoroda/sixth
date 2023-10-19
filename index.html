@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+
+        <script src="calculator.js"></script>
+        <script src="calculator2.js" defer></script>
+
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"> </script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="styles.css">
+        <meta charset="UTF-8">
+        <title> six </title>
+        
+
+    </head>
+
+
+    <body>
+        <header>
+            <div>
+                <h1 class="ml-2">Калькулятор товаров</h1>
+            </div>
+        </header>
+        <div class="container-fluid">
+            <h2>Корзина:</h2>
+            <form name="calculator" onsubmit="return false;">
+                <div class="row">
+                    <div class="col-lg-3"> <b>Наименования:</b> </div>
+                    <div class="col-lg-2"> <b>Цена за единицу товара в ₽</b> </div>
+                    <div class="col-lg-2"> <b>Количество</b> </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-3"> Товар 1 </div>
+                    <div class="col-lg-2"> <input name="price" type="text" value="10"> </div>
+                    <div class="col-lg-2"> <input name="count" type="text" value="0"> </div>
+                </div>
+
+                <br>
+
+                <div class="row">
+                    <div class="col-lg-3"> Товар 2 </div>
+                    <div class="col-lg-2"> <input name="price0" type="text" value="15"> </div>
+                    <div class="col-lg-2"> <input name="count0" type="text" value="0"> </div>
+                </div>
+
+                <br>
+
+                <div class="row">
+                    <div class="col-lg-3"> Товар 3 </div>
+                    <div class="col-lg-2"> <input name="price1" type="text" value="20"> </div>
+                    <div class="col-lg-2"> <input name="count1" type="text" value="0"> </div>
+                </div>
+                <button onclick="calc();">Итог</button>
+            </form>
+        <div class="pt-2" id="result"></div>
+
+            <br>
+
+        <div class="container-fluid">
+            <h2>Корзина 2:</h2>
+            <form name="calculator2">
+                <div class="row">
+                    <div class="col-5 col-lg-3"> <b>Выберете наименование:</b> </div>
+                    <div class="col-5 col-lg-3"> <b>Количество</b> </div>
+                </div>
+                <div class="row">
+                    <div class="col-5 col-lg-3">
+                        <select name="type">
+                            <option value="1">1 Товар без селекта и чекбокса</option>
+                            <option value="2">2 Товар с селектом, но без чекбокса</option>
+                            <option value="3">3 Товар без селекта, но с чекбоксом</option>
+                        </select>
+                    </div>
+                    <div class="col-7 col-lg-4">
+                        <input id="count" type="number" value="1">
+                    </div>
+                    <div class="col-lg-5"></div>
+                    <br>
+                    <div class="row">
+                        <div id="radios">
+                            <div class="col-12 pl-4">
+                                <label><input type="radio" name="options" value="1">Опция 1</label>
+                            </div>
+                            <div class="col-12 pl-4">
+                                <label><input type="radio" name="options" value="2">Опция 2</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div id="checkboxes">
+                            <div class="col-12 pl-4">
+                                <label><input type="checkbox" name="1">Свойство 1</label>
+                            </div>
+                            <div class="col-12 pl-4">
+                                <label><input type="checkbox" name="2">Свойство 2</label>
+                            </div>
+                            <div class="col-12 pl-4">
+                                <label><input type="checkbox" name="3">Свойство 3</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <h3> Итог: </h3>
+            </form>
+            <div id="price"></div>
+        </div>
+    </body>
+</html>

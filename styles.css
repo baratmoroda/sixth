@@ -1,0 +1,32 @@
+h1 {
+    font-size: 20px;
+    color: #c6c6c6;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 17px;
+}
+
+button {
+    background-color: #757575;
+    border: 2px solid #c6c6c6;
+}
+
+form {
+    font-size: 15px;
+
+}
+
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 30px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+}
